@@ -122,13 +122,14 @@ a{
     padding: 40px 0;
 }
 
+.demo-application [class^='col-'] {
+    padding: 11px;
+}
+
+/**card**/
 .card{
     background-color: var(--lightblue);
     border-radius: 20px;
-}
-
-.demo-application [class^='col-'] {
-    padding: 11px;
 }
 
 .card.phone{
