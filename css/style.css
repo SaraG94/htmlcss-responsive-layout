@@ -1,0 +1,168 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: currentColor;
+}
+
+:root {
+    --blue: #0084FD;
+    --lightblue: #B5DDFF;
+    --violet: #9792E4;
+    --grey: #F5F5F5;
+    --yellow: #FDC15F;
+}
+
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+/**button**/
+.button{
+    border-radius: 50px;
+}
+
+/**row**/
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.jc{
+    justify-content: space-between;
+    align-items: center;
+}
+
+/***colonne***/
+.col-33{
+    flex-basis: calc(100% /3);
+}
+
+.col-66{
+    flex-basis: calc(100% /3 *2);
+}
+
+/**header**/
+
+.main-header{
+    background-color: var(--blue);
+    padding: 19px 0;
+    color: white;
+}
+
+.nav-item a{
+    line-height: 38px;
+    font-size: 16px;
+    padding: 0 16px;
+}
+
+.nav-item.button--white{
+    background-color: white;
+    color: black;
+}
+
+.hamburger{
+    display: none;
+}
+
+/***Mediaquery ipad***/
+
+@media  screen and (max-width: 991px) {
+    .hamburger{
+        display: block;
+        font-size: 1.5rem;
+    }    
+
+    .nav-header{
+        display: none;
+    }
+
+    .main-header{
+        padding: 19px 15px;
+    }
+
+    /***section demo-application ipad***/
+    .card.phone{
+        flex-wrap: wrap;
+    }
+
+    .col-33.card-code{
+        display: flex;  
+    }
+
+}
+
+/***Mediaquery mobile***/
+
+@media  screen and (max-width: 575px) {
+    .demo-application [class^='col-'] {
+        flex-basis: 100%;
+    }    
+}
+
+/***section demo-application***/
+.demo-application{
+    padding: 40px 0;
+}
+
+.card{
+    background-color: var(--lightblue);
+    border-radius: 20px;
+}
+
+.demo-application [class^='col-'] {
+    padding: 11px;
+}
+
+.card.phone{
+    display: flex;
+    gap: 70px;
+    padding: 38px 18px 0;
+}
+
+.card>.card-text{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: #5A6E7F;
+}
+
+.card-title{
+    color: var(--blue);
+}
+
+.card-text .button--blue{
+    background-color: var(--blue);
+    color: white;
+    padding: 10px 45px;
+    max-width: max-content;
+}
+
+/**card icone**/
+
+.card.icone{
+    text-align: center;
+    padding: 24px 22px;
+}
+
+.card-text i.icone{
+    font-size: 5rem;
+    color: var(--blue);
+}
