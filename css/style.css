@@ -336,3 +336,28 @@ a{
 .testimonial-text h4{
     margin-top: 30px;
 }
+
+/************Mediaquery ipad************/
+
+@media  screen and (max-width: 991px) {
+    .col.testimonial-profile>figure{
+        flex-basis: 30%;
+    }
+}
+/***************************/
+
+/***Mediaquery mobile******/
+
+@media  screen and (max-width: 575px) {
+    .col.testimonial-profile {
+        flex-direction: column;
+        row-gap: 10px;
+        text-align: center;
+    }    
+
+    .col.testimonial-profile img{
+        width: 50%;
+        margin: auto;
+    }
+}
+/***************************/
