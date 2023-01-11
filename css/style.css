@@ -162,7 +162,7 @@ a{
     padding: 38px 18px 0;
 }
 
-.card-text.column{
+.column{
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -363,3 +363,58 @@ a{
 }
 /***************************/
 /******** fine Testimonial********/
+
+/************Benefit***********/
+.row.benefit{
+    row-gap: 32px;
+    padding: 63px 0;
+}
+
+.row.benefit .col-33{
+    padding: 0 16px;
+}
+
+.row.benefit .col__title{
+    flex-basis: 100%;
+    margin-bottom: 33px;
+}
+
+.row.benefit .col__title>h3{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+.card--benefit{
+    background-color: white;
+    padding: 35px 30px;
+    border-radius: 16px;
+}
+
+.bold{
+    font-weight: bold;
+    color: var(--violet);
+}
+
+.card--benefit .n-benefit {
+    font-size: 50px;
+}
+
+.card--benefit .title-benefit {
+    font-size: 21px;
+}
+
+.card--benefit .descrition {
+    font-size: 14px;
+    line-height: 28px;
+    color: #818181;
+}
+
+.card--benefit .more {        
+    background-color: var(--violet);
+    color: white;      
+    border-radius: 15px;        
+    padding: 5px 45px;
+    max-width: max-content;
+    font-weight: bold;
+}
