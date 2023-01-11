@@ -40,6 +40,11 @@ a{
     margin: 0 auto;
     padding: 100px 11px 50px;
 }
+
+.little-container{
+    max-width: 576px;
+    margin: 0 auto;
+}
 /**button**/
 .button{
     border-radius: 50px;
@@ -346,16 +351,13 @@ a{
 }
 
 /************Mediaquery ipad************/
-
 @media  screen and (max-width: 991px) {
     .col.testimonial-profile>figure{
         flex-basis: 30%;
     }
 }
-/***************************/
 
 /***Mediaquery mobile******/
-
 @media  screen and (max-width: 575px) {
     .col.testimonial-profile {
         flex-direction: column;
@@ -368,7 +370,6 @@ a{
         margin: auto;
     }
 }
-/***************************/
 /******** fine Testimonial********/
 
 /************Benefit***********/
@@ -567,3 +568,59 @@ a{
     }
 }   
 /*******Fine Mediaquery About Us*******/
+
+/*************Get Started**************/
+.little-container>.row{
+    padding: 65px 0;
+}
+
+.try-free-text{
+    text-align: center;
+    color: white;
+}
+
+.col.try-free p.started{
+    color: #D5D4F4;
+    font-size: 14px;
+}
+
+.col.try-free p.up-title{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.col.try-free h1{
+    font-size: 70px;
+    color: var(--yellow);
+}
+
+.col.try-free p.beta-explain{
+    line-height: 35px;
+    font-size: 17px;
+}
+
+.col.try-free a.button--white{
+    background-color: white;
+    color: var(--violet);
+    padding: 0px 80px;
+    border-radius: 45px;
+    line-height: 56px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.col.try-free ul.copyright{
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+
+ul.copyright .cr-item2{
+    list-style: initial;
+} 
+
+ul.copyright .cr-item3{
+    list-style: initial;
+    text-decoration: underline;
+} 
+/**********Fine Get Started************/
