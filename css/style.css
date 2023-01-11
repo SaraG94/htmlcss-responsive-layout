@@ -57,12 +57,19 @@ a{
 }
 
 /***colonne***/
+.col-20{
+    flex-basis: calc(100% /5);
+}
 .col-33{
     flex-basis: calc(100% /3);
 }
 
 .col-40{
     flex-basis: 40%;
+}
+
+.col-60{
+    flex-basis: calc(100% /5 *3);
 }
 
 .col-66{
@@ -444,4 +451,55 @@ a{
         padding: 0 11px;
     }    
 }   
-/**********Fine Mediaquery Benefit***********/
+/*******Fine Mediaquery Benefit*******/
+
+
+/**********About Us***********/
+.row.about-us{
+    justify-content: space-around;
+    padding: 95px 0 156px;
+}
+
+/***text***/
+.about-us-text h1{
+    font-size: 50px;
+    color: var(--violet);
+}
+
+.about-us-text p.text-description{
+    padding-top: 58px;
+    line-height: 30px;
+}
+
+/***tutorcolumn***/
+.tutor.column{
+    color: var(--violet);
+}
+
+.tutor.column figure{
+    position: relative;
+}
+
+.tutor.column .tutor__img{
+    border-radius: 100%;
+}
+
+.tutor.column i.open-cit{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 75px;
+}
+
+.tutor.column .button-violet{
+    background-color: var(--violet);
+    color: white;
+    border-radius: 15px;
+    padding: 5px 15px;
+    max-width: max-content;
+}
+
+.button-violet>i.social{
+    margin-right: 10px;
+}
+/**********fine About Us***********/
