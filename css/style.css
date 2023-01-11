@@ -279,6 +279,7 @@ a{
 .testimonial .row.our-partners{
     flex-direction: column;
     row-gap: 32px;
+    padding: 68px 0 110px;
 }
 
 .row.our-partners .col{
@@ -361,3 +362,4 @@ a{
     }
 }
 /***************************/
+/******** fine Testimonial********/
