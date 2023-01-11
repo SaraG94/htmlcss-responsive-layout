@@ -36,9 +36,9 @@ a{
 }
 
 .medium-container{
-    max-width: 885px;
+    max-width: 896px;
     margin: 0 auto;
-    padding: 100px 0 50px;
+    padding: 100px 11px 50px;
 }
 /**button**/
 .button{
@@ -63,7 +63,6 @@ a{
 
 .col-40{
     flex-basis: 40%;
-    padding: 11px;
 }
 
 .col-66{
@@ -115,11 +114,11 @@ a{
         flex-wrap: wrap;
     }
 
-    .col-33.code{
-        display: flex;  
+    /**section what we do**/
+    .medium-container .row.planning{
+        row-gap: 18px;
     }
 
-    /**section what we do**/
     .col-40{
         flex-basis: 100%;
     }
@@ -127,24 +126,28 @@ a{
 }
 /***************************/
 
+
+/***section demo-application****/
+.demo-application>.container{
+    padding: 40px 0 100px;
+}
+
+.demo-application [class^='col-'] {
+    padding: 11px;
+}
+
 /***Mediaquery mobile******/
 
 @media  screen and (max-width: 575px) {
     .demo-application [class^='col-'] {
         flex-basis: 100%;
     }    
+
+    .demo-application>.container{
+        padding: 40px 0 80px;
+    }
 }
 /***************************/
-
-
-/***********section demo-application*************/
-.demo-application{
-    padding: 40px 0;
-}
-
-.demo-application [class^='col-'] {
-    padding: 11px;
-}
 
 /**card**/
 .lblue{
@@ -182,6 +185,10 @@ a{
     padding: 24px 22px; 
 }
 
+.card.icone.short.lblue{
+    min-height: 100%;
+}
+
 .card-text i.icone{
     font-size: 5rem;
     color: var(--blue);
@@ -205,8 +212,12 @@ a{
     line-height: 25px;
 }
 
+.card-plan.strategy .col_img{
+    margin-bottom: 100px;
+}
+
 .card-plan.strategy h2{
-    padding: 120px 0 30px;
+    line-height: 1.7em;
     font-size: 25px;
 }
 
@@ -221,8 +232,14 @@ a{
     padding: 30px 35px;
 }
 
+.card-plan.white img{
+    width: 70%;
+    margin: 0 auto;
+}
+
 .card-plan.white h3.title{
     padding-top: 30px;
+    line-height: 1.7em;
 }
 
 .card-plan.white p{
