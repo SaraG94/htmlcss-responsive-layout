@@ -29,10 +29,16 @@ a{
     --grey: #F5F5F5;
     --yellow: #FDC15F;
 }
-
+/**container**/
 .container{
     max-width: 1140px;
     margin: 0 auto;
+}
+
+.medium-container{
+    max-width: 885px;
+    margin: 0 auto;
+    padding: 100px 0 50px;
 }
 /**button**/
 .button{
@@ -55,11 +61,16 @@ a{
     flex-basis: calc(100% /3);
 }
 
+.col-40{
+    flex-basis: 40%;
+    padding: 11px;
+}
+
 .col-66{
     flex-basis: calc(100% /3 *2);
 }
 
-/**header**/
+/***********header***********/
 
 .main-header{
     background-color: var(--blue);
@@ -81,8 +92,9 @@ a{
 .hamburger{
     display: none;
 }
+/***************************/
 
-/***Mediaquery ipad***/
+/************Mediaquery ipad************/
 
 @media  screen and (max-width: 991px) {
     .hamburger{
@@ -103,21 +115,29 @@ a{
         flex-wrap: wrap;
     }
 
-    .col-33.card-code{
+    .col-33.code{
         display: flex;  
     }
 
-}
+    /**section what we do**/
+    .col-40{
+        flex-basis: 100%;
+    }
 
-/***Mediaquery mobile***/
+}
+/***************************/
+
+/***Mediaquery mobile******/
 
 @media  screen and (max-width: 575px) {
     .demo-application [class^='col-'] {
         flex-basis: 100%;
     }    
 }
+/***************************/
 
-/***section demo-application***/
+
+/***********section demo-application*************/
 .demo-application{
     padding: 40px 0;
 }
@@ -127,9 +147,10 @@ a{
 }
 
 /**card**/
-.card{
+.lblue{
     background-color: var(--lightblue);
     border-radius: 20px;
+    color: #5A6E7F;
 }
 
 .card.phone{
@@ -138,11 +159,10 @@ a{
     padding: 38px 18px 0;
 }
 
-.card>.card-text{
+.card-text.column{
     display: flex;
     flex-direction: column;
     gap: 30px;
-    color: #5A6E7F;
 }
 
 .card-title{
@@ -157,13 +177,63 @@ a{
 }
 
 /**card icone**/
-
 .card.icone{
     text-align: center;
-    padding: 24px 22px;
+    padding: 24px 22px; 
 }
 
 .card-text i.icone{
     font-size: 5rem;
     color: var(--blue);
+}
+/*******************************/
+
+/**********section what-we-do***********/
+
+.violet{
+    background-color: var(--violet);
+}
+
+.medium-container>.row{
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+/**card-strategy**/
+.card-plan.strategy{
+    color: white;
+    line-height: 25px;
+}
+
+.card-plan.strategy h2{
+    padding: 120px 0 30px;
+    font-size: 25px;
+}
+
+/**card-white**/
+.white{
+    background-color: white;
+}
+
+.card-plan.white{
+    text-align: center;
+    border-radius: 40px;
+    padding: 30px 35px;
+}
+
+.card-plan.white h3.title{
+    padding-top: 30px;
+}
+
+.card-plan.white p{
+    font-style: italic;
+    line-height: 30px;
+    font-size: 15px;
+}
+
+.card-plan.white i.icone-plan{
+    background-color: var(--violet);
+    border-radius: 100%;
+    font-size: 20px;
+    padding: 7px 10px;
 }
