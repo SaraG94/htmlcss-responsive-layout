@@ -254,3 +254,85 @@ a{
     font-size: 20px;
     padding: 7px 10px;
 }
+
+/************Mediaquery ipad************/
+
+@media  screen and (max-width: 991px) {
+      /***section demo-application ipad***/
+    .card.phone{
+        flex-wrap: wrap;
+    }
+
+    /**section what we do**/
+    .medium-container .row.planning{
+        row-gap: 18px;
+    }
+
+    .col-40{
+        flex-basis: 100%;
+    }
+}
+/***************************/
+
+/********Testimonial********/
+
+.testimonial .row.our-partners{
+    flex-direction: column;
+    row-gap: 32px;
+}
+
+.row.our-partners .col{
+    flex-grow: 1;
+}
+
+.presentation-testimonial{
+    padding: 0 32px;
+    text-align: center;
+}
+
+.presentation-testimonial h6{
+    font-weight: normal;
+}
+
+.presentation-testimonial h1.title{
+    padding: 43px 0;
+    font-size: 35px;
+    color: var(--violet);
+}
+
+.presentation-testimonial .presentation-text{
+    font-size: 19px;
+    font-weight: lighter;
+}
+
+/**profile testimonial**/
+
+.col.testimonial-profile{
+    display: flex;
+    align-items: center;
+    column-gap: 36px;
+    background-color: var(--violet);
+    padding: 35px 15px 45px;
+    border-radius: 40px;
+    color: white;
+}
+
+.col.testimonial-profile>figure{
+    flex-basis: 20%;
+}
+
+.col.testimonial-profile img{
+    border-radius: 999px;
+}
+
+.col.testimonial-profile>.testimonial-text{
+    flex-basis: 80%;
+}
+
+.testimonial-text p{
+    font-size: 16px;
+}
+
+.testimonial-text h4{
+    margin-top: 30px;
+}
