@@ -418,3 +418,30 @@ a{
     max-width: max-content;
     font-weight: bold;
 }
+/***********Fine Benefit***********/
+
+/***********Mediaquery Benefit***********/
+@media  screen and (max-width: 991px) {
+    .row.benefit{
+        row-gap: 16px;
+        padding: 30px 0;
+    }
+    
+    .row.benefit .col-33{
+        flex-basis: 50%;
+        padding: 0 8px;
+    }    
+}
+
+@media  screen and (max-width:575px) {
+    .row.benefit{
+        row-gap: 10px;
+        padding: 23px 0;
+    }
+    
+    .row.benefit .col-33{
+        flex-basis: 100%;
+        padding: 0 11px;
+    }    
+}   
+/**********Fine Mediaquery Benefit***********/
