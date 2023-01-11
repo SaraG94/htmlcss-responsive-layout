@@ -326,7 +326,7 @@ a{
 }
 
 .col.testimonial-profile>.testimonial-text{
-    flex-basis: 80%;
+    width: 80%;
 }
 
 .testimonial-text p{
