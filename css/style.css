@@ -331,12 +331,13 @@ a{
     color: white;
 }
 
-.col.testimonial-profile>figure{
-    flex-basis: 20%;
-}
 
 .col.testimonial-profile img{
     border-radius: 999px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center;
+    width: 200px;
 }
 
 .col.testimonial-profile>.testimonial-text{
@@ -364,12 +365,7 @@ a{
         flex-direction: column;
         row-gap: 10px;
         text-align: center;
-    }    
-
-    .col.testimonial-profile img{
-        width: 50%;
-        margin: auto;
-    }
+    } 
 }
 /******** fine Testimonial********/
 
