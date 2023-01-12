@@ -586,7 +586,7 @@ a{
 }
 
 .col.try-free p.up-title{
-    font-size: 30px;
+    font-size: 44px;
     font-weight: bold;
 }
 
@@ -598,6 +598,7 @@ a{
 .col.try-free p.beta-explain{
     line-height: 35px;
     font-size: 17px;
+    width: 80%;
 }
 
 .col.try-free a.button--white{
@@ -632,8 +633,19 @@ ul.copyright .cr-item3{
     color:white;
 }
 
-p.footer-suggest{
-    margin-bottom: 58px;
+.column.text-footer.jc{
+    gap: 58px;
+    text-align: center;
+    padding: 40px 0;
 }
 
+.column.text-footer.jc p{
+    width: 75%;
+    font-size: 16px;
+}
+
+.footer-license a.active-link{
+    text-decoration: underline;
+    color: var(--violet);
+}
 /***********Fine Footer**************/
