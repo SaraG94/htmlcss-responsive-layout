@@ -28,6 +28,7 @@ a{
     --violet: #9792E4;
     --grey: #F5F5F5;
     --yellow: #FDC15F;
+    --dark:#333333;
 }
 /**container**/
 .container{
@@ -624,3 +625,15 @@ ul.copyright .cr-item3{
     text-decoration: underline;
 } 
 /**********Fine Get Started************/
+
+/***************Footer****************/
+.dark{
+    background-color: var(--dark);
+    color:white;
+}
+
+p.footer-suggest{
+    margin-bottom: 58px;
+}
+
+/***********Fine Footer**************/
